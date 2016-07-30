@@ -1,4 +1,4 @@
-package com.jatis.mobile.whatsapptx;
+package com.example.jarmq;
 
 import org.apache.activemq.ActiveMQConnectionFactory;
 
@@ -24,14 +24,14 @@ import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 
  
-public class WhatsappMQ {
+public class jarmq {
 	
 	static String OS = System.getProperty("os.name").toLowerCase();
 	private static String dirData, home=System.getProperty("user.home");
 	private static String wadata="genymotion/bash/wadata";
 	private static String jsonFile="checkMQ.json", resultOfJson="";
 	private static String[] mData = new String[5];
-	private static String MQhost = "tcp://localhost:61616", MQname="whatsapp";
+	private static String MQhost = "tcp://localhost:61616", MQname="test";
 	
     public static void main(String[] args) throws Exception {
         
